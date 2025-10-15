@@ -16,7 +16,7 @@ let sumimpares = 0;
  }
 
 
-
+//dddddddd
 
  const numInicial = prompt('Ingrese el numero inicial:');
 const numEval = prompt('Ingrese el numero de elementos del array:');
