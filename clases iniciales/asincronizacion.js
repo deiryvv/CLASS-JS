@@ -145,12 +145,13 @@ form.addEventListener("submit", (event) => {
 postList.addEventListener("click", (event) => {
   if (event.target.tagName === "BUTTON") {
     const postId = event.target.closest("article").id;
-    console.log("deleting post with ID:", postId);
+    console.log("Deleting post with ID:", postId);
+    
     sendHTTPRequest(
       "DELETE",
-      ´https://jsonplaceholder.typicode.com/posts/${postId}´
-
+      `https://jsonplaceholder.typicode.com/posts/${postId}`
     );
+    
     event.target.closest("article").remove();
   }
-})
+});
